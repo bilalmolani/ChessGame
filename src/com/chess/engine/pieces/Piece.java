@@ -20,6 +20,10 @@ public abstract class Piece {
 
     }
 
+    public int getPiecePosition() {
+        return this.piecePosition;
+    }
+
     public Alliance getPieceAlliance() {
         return this.pieceAlliance;
     }
