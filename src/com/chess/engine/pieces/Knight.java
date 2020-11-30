@@ -56,6 +56,13 @@ public class Knight extends Piece {
         }
         return ImmutableList.copyOf(legalMoves);
     }
+
+    @Override
+    public String toString(){
+        return PieceType.KNIGHT.toString();
+    }
+
+
     //excluding the tile positions where knight can't go
     private static boolean isFirstColumnExclusion(final int currentPosition, final int candidateOffset){
         return BoardUtils.FIRST_COLUMN[currentPosition] && (candidateOffset == -17 || candidateOffset == -10
